@@ -53,7 +53,7 @@ PM = int(pm) if pm and id_pattern.search(pm) else None
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://singhsawan880:singhsawan880@cluster0.uzawtpr.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rishikesh001:Rishikesh001@cluster0.lqncnak.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "mongdb")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
