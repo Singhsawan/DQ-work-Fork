@@ -32,7 +32,7 @@ SP = (environ.get('SP', 'https://telegra.ph/file/db018384d5d139f3844ed.jpg https
 
 # Admins, Channels & Users
 ADMIN = int(environ.get('ADMINS'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 
 
@@ -53,8 +53,8 @@ PM = int(pm) if pm and id_pattern.search(pm) else None
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://singhsawan880:singhsawan880@cluster0.uzawtpr.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mongdb")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Custom Chats
@@ -76,9 +76,9 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '973a78409424fc98d61399e41a1aa90ba0
 
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
-# SHORTLINK_URL = environ.get('SHORTLINK_URL', 'http://TinyFy.in')
-# SHORTLINK_API = environ.get('SHORTLINK_API', '5f301bd41650cf7f64b9e7434fef3b7c973918df')
+VERIFY = bool(environ.get('VERIFY', True))
+# SHORTLINK_URL = environ.get('SHORTLINK_URL', 'TinyFy.in')
+# SHORTLINK_API = environ.get('SHORTLINK_API', '8f29e4130ed3439c4c5cfc5c56dae86c0aff0daa)
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
@@ -88,7 +88,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/NasraniSeries')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bigmoviesworld')
 MSG_ALRT = environ.get('MSG_ALRT', 'Piracy Is Crime')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001551869890))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'NasraniSeries')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -123,8 +123,8 @@ LANGUAGES = ["MALAYALAM", "TAMIL", "ENGLISH", "HINDI", "TELUGU", "KANNADA" "DUBB
 IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 600))
 
 # heroku
-HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
-HRK_API = environ.get('HRK_API', '0')
+HRK_APP_NAME = environ.get('HRK_APP_NAME', 'trs')
+HRK_API = environ.get('HRK_API', 'ec7d1074-4418-4d44-835d-ec06ad798a66')
 
 
 
